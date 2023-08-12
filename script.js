@@ -8,20 +8,6 @@ document.getElementById('lookupBtn').addEventListener('click', function() {
             console.log(fullName);
             const seatNum = SEATING[fullName] ?? "No seat number found for the provided name."
 
-            // const lines = [
-            //     "Kevin Koshy,Top Table",
-            //     "Lynn Avedikian,Top Table" 
-            // ];
-            // for (const line of lines) {
-            //     const [fullName, seatNum] = line.split(',');
-            //     const [csvFirstName, csvLastName] = fullName.split(' ');
-
-            //     if (csvFirstName.trim() === firstName && csvLastName.trim() === lastName) {
-            //         document.getElementById('result').textContent = `Table Number: ${seatNum}`;
-            //         return;
-            //     }
-            // }
-
             document.getElementById('result').textContent = seatNum;
         } catch (error) {
             document.getElementById('result').textContent = 'An error occurred while fetching the data.';
