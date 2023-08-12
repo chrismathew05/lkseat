@@ -13,13 +13,13 @@ document.getElementById('lookupBtn').addEventListener('click', function () {
     if (fullName) {
         try {
             fullName = fullName.toUpperCase().trim();
-            const seatNum = SEATING[fullName] ?? "No seat number found for the provided name."
+            const seatNum = SEATING[fullName] ?? "No table found! Please check the name entered."
 
             document.getElementById('result').textContent = seatNum;
         } catch (error) {
             document.getElementById('result').textContent = 'An error occurred while fetching the data.';
         }
     } else {
-        document.getElementById('result').textContent = 'Please enter your full (first, middle, last) name.';
+        document.getElementById('result').textContent = 'Please enter your full name.';
     }
 });
