@@ -15,7 +15,7 @@ document.getElementById('lookupBtn').addEventListener('click', function () {
             fullName = fullName.toUpperCase().trim();
             const seatNum = SEATING[fullName] ?? "No table found! Please check the name entered."
 
-            document.getElementById('result').textContent = seatNum;
+            document.getElementById('result').textContent = `Table: ${seatNum}`;
         } catch (error) {
             document.getElementById('result').textContent = 'An error occurred while fetching the data.';
         }
