@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,20 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Seating</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Thank you for joining us today!</h1>
         <p class="subheader">Please type your name to find your seat.</p>
         <div class="input-container">
-            <input type="text" id="firstName" placeholder="First Name">
-            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="fullName" placeholder="Full Name" list="full-names">
+            <datalist id="full-names"></datalist>
             <button id="lookupBtn">Find your table!</button>
         </div>
         <div class="result" id="result"></div>
     </div>
-    <script src="script.js"></script>
     <script src="names.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,18 @@
-document.getElementById('lookupBtn').addEventListener('click', function() {
-    const firstName = document.getElementById('firstName').value;
-    const lastName = document.getElementById('lastName').value;
+let list = document.getElementById('full-names');
 
-    if (firstName && lastName) {
+for (let key in SEATING) {
+    let option = document.createElement("option");
+    option.value = key;
+    list.appendChild(option);
+}
+
+
+document.getElementById('lookupBtn').addEventListener('click', function () {
+    let fullName = document.getElementById('fullName').value;
+
+    if (fullName) {
         try {
-            const fullName = firstName.toUpperCase().trim() + " " + lastName.toUpperCase().trim();
-            console.log(fullName);
+            fullName = fullName.toUpperCase().trim();
             const seatNum = SEATING[fullName] ?? "No seat number found for the provided name."
 
             document.getElementById('result').textContent = seatNum;
@@ -13,6 +20,6 @@ document.getElementById('lookupBtn').addEventListener('click', function() {
             document.getElementById('result').textContent = 'An error occurred while fetching the data.';
         }
     } else {
-        document.getElementById('result').textContent = 'Please enter both first name and last name.';
+        document.getElementById('result').textContent = 'Please enter your full (first, middle, last) name.';
     }
 });
