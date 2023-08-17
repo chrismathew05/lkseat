@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: flex-start; /* Align container to the top */
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-image: url('bg-crop.jpeg');
 }
 
 .container {
@@ -17,11 +17,21 @@ body {
     text-align: center;
     max-width: 400px; /* Limit container width for readability */
     margin-top: 20px; /* Add space between top of the screen and container */
+    opacity: 90%;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #333;
+.name-header {
+    /* margin-bottom: 20px; */
+    /* color: #333; */
+    font-family: 'Brush Script MT', cursive;
+    font-size: 35px;
+}
+
+.header {
+    /* margin-bottom: 20px; */
+    /* color: #333; */
+    font-family: 'Luminari', fantasy;
+    font-size: 50px;
 }
 
 .subheader {
