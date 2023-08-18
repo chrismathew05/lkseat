@@ -21,17 +21,14 @@ body {
 }
 
 .name-header {
-    /* margin-bottom: 20px; */
-    /* color: #333; */
     font-family: 'Brush Script MT', cursive;
     font-size: 35px;
 }
 
 .header {
-    /* margin-bottom: 20px; */
-    /* color: #333; */
-    font-family: 'Luminari', fantasy;
-    font-size: 50px;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 .subheader {
