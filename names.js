@@ -280,6 +280,8 @@ const SEATING = {
     "RACHELLE NASR": "7",
     "GAELLE NASR": "7",
     "PATRICK FINLAN": "7",
+    "MILAD JABBOUR": "7",
+    "MARIE KATTAR": "7",
     "SHERWIN SAM": "6",
     "LIJO SAM": "6",
     "MIKTHA SAM": "6",
